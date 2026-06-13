@@ -8,6 +8,7 @@ from frappe.model.document import Document
 class InventoryAlert(Document):
 	def before_insert(self):
 		print("before_insert") 
+		
 
 	def validate(self):
 		if self.minimum_qty < 0:
